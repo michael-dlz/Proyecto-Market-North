@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+
+video{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+.encabezado{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+img{
+    width: 100px;
+}
+.encabezado nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 12px;
+    display: block;
+}
+
+a:hover{ 
+    background: rgb(44,44,44);
+}
+.encabezado nav ul li ul{
+    display: flex;
+    flex-direction: column;
+}
+.encabezado nav ul li ul{
+    position: absolute;
+    background:  white;
+}
+.encabezado nav ul li ul li{
+    width: 180px;
+    position: relative;
+}
+
+.encabezado nav ul li ul li a{
+    color: black;
+}
+
+.encabezado nav ul li ul li ul{
+    top: 0;
+    left: 180px;
+    position: absolute;
+}
+.encabezado nav ul li ul{
+    display: none;
+}
+.encabezado nav ul li:hover > ul{
+    display: block;
+    color: white;
+}
+
+section .contenedor{
+    margin-top: 2cm;
+}
+
+section .contenedor .caja1{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35cm;
+}
+
+section .contenedor .title{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Panipuri;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+    color: white;
+}
+
+section .contenedor .detalles{
+    margin-top: 1cm;
+    font-size: 1.2rem;
+    display: grid;
+    align-content: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+}
+
+section .contenedor .detalles p{
+    color: white;
+    padding: 30px;
+}
+
+section .contenedor .imagen{
+    display: grid;
+    align-content: center;
+}
+
+section .contenedor .imagen img{
+    width: 13cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.562);
+}
+
+footer {
+    background-color: white;
+    opacity: 0.8;
+    height: 10cm;
+    color: black;
+    margin-top: -4px;
+  }
+  
+  footer .fin {
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: 2px;
+  }
+  
+  footer .logo img {
+    height: 40px;
+    margin-right: auto;
+    border: none;
+  }
+  
+  footer ul {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  
+  footer a {
+    color: black;
+    font-weight: bold;
+  }
+  
+  footer li {
+    font-size: 20px;
+    padding-top: 20px;
+  }
