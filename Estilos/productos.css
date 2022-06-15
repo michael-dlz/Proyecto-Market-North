@@ -89,7 +89,6 @@ section .producto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 10px;
-  border: 1px solid white;
 }
 
 section .contenedor {
@@ -123,6 +122,7 @@ section .contenedor .titulo{
 
 section .producto .detalles {
   background-color: black;
+  opacity: 0.7;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -131,6 +131,11 @@ section .producto .detalles {
   color: white;
   padding: 3px;
   transition: 500ms;
+}
+
+section .producto .detalles:hover{
+  opacity: 1;
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.486);
 }
 
 section .producto .detalles .title p {
@@ -174,6 +179,20 @@ section .producto .detalles button {
 section .producto .detalles button:hover {
   box-shadow: 0px 0px 30px 2px #ade7b6d7;
   padding: 7px;
+}
+
+section .contenedor2 .title{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: Panipuri;
+  font-size: 2rem;
+}
+
+section .contenedor2 .video{
+  display: flex;
+  justify-content: center;
+  margin-top: 3cm;
 }
 
 footer {
