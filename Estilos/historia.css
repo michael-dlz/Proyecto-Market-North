@@ -122,6 +122,18 @@ section .contenedor .imagen img{
     box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.562);
 }
 
+section .contenedor .imagen .img1{
+    transform: rotatez(10deg);
+}
+
+section .contenedor .imagen .img2{
+    transform: rotateZ(-10deg)
+}
+
+section .contenedor .imagen .img3{
+    transform: rotateZ(10deg)
+}
+
 footer {
     background-color: white;
     opacity: 0.8;
