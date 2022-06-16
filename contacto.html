@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="Estilos/contacto.css">
-</head>
-<body>
-    <menu>
-        <div class="contenedor">
-            <div class="logo">
-                <a href="index.html"><img src="content/images/logo.svg" alt=""></a>
-            </div>
-            <div class="imagen">
-                <img src="content/images/04_ambulance_800x600.gif" alt="">
-            </div>
-            <div class="texto">
-                <p>¡¡Oh no!!, ¡Esta pagina esta en emergencia!, ¡danos un tiempo <br> para traerlo de vuelta!</p>
-            </div>
-        </div>
-    </menu>
-</body>
+<html>
+  <head>
+    <title>Contactanos</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="Estilos/contacto.css" />
+  </head>
+  <body>
+	<header class="encabezado">
+		<nav>
+		  <div>
+			<a href="index.html"><img src="content/images/logo.svg" alt="" /></a>
+		  </div>
+		  <ul>
+			<li>
+			  <a href="#">Nosotros</a>
+			  <ul>
+				<li><a href="#nosotros">Historia</a></li>
+				<li><a href="#mision">Misión</a></li>
+				<li><a href="#vision">Visión</a></li>
+				<li><a href="#footer">Soporte</a></li>
+			  </ul>
+			</li>
+			<li><a href="productos.html">Productos</a></li>
+			<li><a href="index.html">Contáctanos</a></li>
+		  </ul>
+		</nav>
+	  </header>
+	<div class="contenedor">
+		<video src="content/Videos/gradient.mp4" autoplay muted loop></video>
+		<header id="header">
+		  <h1>Contactanos</h1>
+		  <p>
+			¿Tienes alguna duda?<br />
+			Contactanos!
+		  </p>
+		</header>
+		<form>
+		  <input type="email" name="email" id="email" placeholder="Correo Electronico" />
+		  <input type="email" name="email" id="phone" placeholder="Numero" />
+		  <input type="submit" value="Enviar" id="buttom"/>
+		</form>
+	</div>
+  </body>
 </html>

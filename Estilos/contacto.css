@@ -1,30 +1,126 @@
-* {
-  margin: 0;
+*{
+  margin:0;
   padding: 0;
-  box-sizing: 0;
+  scroll-behavior: smooth;
+  
 }
 
-body{
-    background-color: #B5C6BD;
-}
-
-menu .contenedor {
+.contenedor{
   display: grid;
-  align-content: center;
-  text-align: center;
-  margin-top: 2cm;
+  margin-top: 8cm;
+  margin-left: 3cm;
 }
 
-menu .contenedor .logo img{
-    height: 70px;
+video{
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
 }
 
-menu .contenedor .imagen img{
-    height: 13cm;
+.encabezado{
+  background-color: black;
+  opacity: 0.7;
+  top: 0;
+  z-index: 99;
+}
+img{
+  width: 100px;
+}
+.encabezado nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+.encabezado nav ul{
+  list-style: none;
+  display: flex;
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 12px;
+  display: block;
 }
 
-menu .contenedor p{
-    font-size: 50px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+a:hover{ 
+  background: rgb(44,44,44);
+}
+.encabezado nav ul li ul{
+  display: flex;
+  flex-direction: column;
+}
+.encabezado nav ul li ul{
+  position: absolute;
+  background:  white;
+}
+.encabezado nav ul li ul li{
+  width: 180px;
+  position: relative;
+}
+
+.encabezado nav ul li ul li a{
+  color: black;
+}
+
+.encabezado nav ul li ul li ul{
+  top: 0;
+  left: 180px;
+  position: absolute;
+}
+.encabezado nav ul li ul{
+  display: none;
+}
+.encabezado nav ul li:hover > ul{
+  display: block;
+  color: white;
+}
+
+header h1{
+  font-family: Arial;
+  font-size: 4rem;
+  color: white;
+}
+
+header p{
+  font-family: arial;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-top: 1cm;
+}
+
+form{
+  margin-top: 1cm;
+}
+
+form #email{
+  border: none;
+  border: 2px solid black;
+  padding: 15px;
+  width: 6cm;
+}
+
+form #phone{
+  border: none;
+  border: 2px solid black;
+  padding: 15px;
+  width: 6cm;
+}
+
+form #buttom{
+  background: none;
+  padding: 15px;
+  width: 3cm;
+  border: none;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
 }
