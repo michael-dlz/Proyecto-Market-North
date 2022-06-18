@@ -89,7 +89,7 @@ header h1 {
 header p {
   font-family: arial;
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
   margin-top: 1cm;
 }
 
