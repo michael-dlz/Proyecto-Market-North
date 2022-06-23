@@ -7,6 +7,7 @@
 
 body{
     background-image: url(../content/images/fondo.png);
+    background-attachment: fixed;
 }
 
 .encabezado{
@@ -86,7 +87,7 @@ section .contenedor .title{
     font-family: Panipuri;
     margin-bottom: 1cm;
     margin-top: 1cm;
-    color: white;
+    color: black;
 }
 
 section .contenedor .detalles{
@@ -101,7 +102,7 @@ section .contenedor .detalles{
 }
 
 section .contenedor .detalles p{
-    color: white;
+    color: black;
     padding: 30px;
 }
 
