@@ -26,8 +26,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 4;
-  opacity: 0.6;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header .container {
@@ -126,10 +125,35 @@ header button:hover {
 }
 
 .promociones menu li:hover {
-  margin-top: 1cm;
+  margin-top: 2cm;
   opacity: 1;
   border: 1px solid white;
   box-shadow: 0px 0px 80px 15px rgb(0, 0, 0);
+  animation-name: animacion2;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacion2{
+  0%{
+    box-shadow: 0px 0px 50px 0px greenyellow;
+  }
+
+  25%{
+    box-shadow: 0px 0px 50px 0px white;
+  }
+
+  50%{
+    box-shadow: 0px 0px 50px 0px greenyellow;
+  }
+
+  75%{
+    box-shadow: 0px 0px 50px 0px white;
+  }
+
+  100%{
+    box-shadow: 0px 0px 50px 0px greenyellow;
+  }
 }
 
 aside {
@@ -146,11 +170,11 @@ aside {
 
 .contenedor{
   border-radius: 3%;
-  background-color: black;
   opacity: 0.8;
   margin-top: 10cm;
   height: 10cm;
   margin-top: 15cm;
+  background-color: black;
 }
 
 .contenedor .icons{
@@ -178,7 +202,7 @@ aside {
 
 .contenedor-2{
   background-color: white;
-  margin-top: -2cm;
+  margin-top: -2.5cm;
   height: 15cm;
 }
 
