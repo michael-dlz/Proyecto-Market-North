@@ -339,6 +339,7 @@ section .caja .imagen{
 
   section{
     height: 55cm;
+    box-shadow: none;
   }
 
   section .caja .imagen .boton{
