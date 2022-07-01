@@ -6,9 +6,10 @@
 }
 
 body{
-  background: linear-gradient( rgba(46, 47, 48, 0.7), rgba(33, 37, 43, 0.7) ), url(https://images.pexels.com/photos/1508666/pexels-photo-1508666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background: linear-gradient( to right,rgba(251, 255, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(247, 78, 0, 0.5) ) , url(https://images.unsplash.com/photo-1544070078-a212eda27b49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80);
   background-size: cover;
   background-attachment: fixed;
+  background-position: bottom;
 }
 
 nav{
@@ -17,7 +18,7 @@ nav{
 }
 
 .nav{
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
   display: flex;
   justify-content: space-around;
 }
@@ -33,7 +34,7 @@ nav{
 }
 
 .nav .buttons ul .c1{
-  background-color: #7CC68C;
+  background-color: #ff7b00;
 }
 
 .nav .buttons ul a{
@@ -79,6 +80,11 @@ header .container{
   width: 13cm;
   padding: 15px;
   margin-top: 10px;
+  transition: 500ms;
+}
+
+.container .ubicacion input:hover{
+  border: 5px solid #ff7b00;
 }
 
 .container .ubicacion label{
@@ -86,6 +92,35 @@ header .container{
   font-weight: bold;
   font-size: 25px;
   font-family: arial;
+}
+
+#punt{
+  margin-top: -15px;
+  height: 8cm;
+  background-color: white;
+}
+
+#punt .container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  align-content: center;
+}
+
+#punt .icons{
+  margin-right: auto ;
+  margin-left: auto;
+  text-align: center;
+}
+
+#punt .icons p{
+  margin-top: 30px;
+  font-size: 1cm;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#punt .icons img{
+  width: 150px;
 }
 
 menu{
@@ -109,7 +144,7 @@ menu .locales .text{
 
 menu .locales .text button{
   width: 7cm;
-  background: #7CC68C;
+  background: #ff7b00;
   border: none;
   color: white;
   font-weight: bold;
@@ -161,8 +196,8 @@ menu .locales img{
 }
 
 #proveedores .provee img{
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
   margin: 1cm;
 }
 
