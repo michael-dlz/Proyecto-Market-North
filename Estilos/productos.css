@@ -273,3 +273,88 @@ section .caja .imagen{
   #button button:hover{
     background-color: rgb(73, 73, 73);
   }
+
+@media screen and (max-width: 1440px) {
+  .container .title{
+    font-size: 10px;
+  }
+
+  .container .promociones .caja{
+    width: 6cm;
+  }
+
+  #navegacion ul{
+    padding: 1px;
+    font-size: 18px;
+  }
+  
+  section{
+    width: 80%;
+  }
+
+  section .caja{
+    transform: scale(0.8, 0.8);
+  }
+
+  section .caja:hover{
+    transform: scale(0.9, 0.9);
+  }
+
+}
+
+@media screen and (max-width: 1335px){
+  section{
+    height: 30cm;
+  }
+
+  section .caja{
+    transform: scale(1,1);
+    margin-top: 40px;
+  }
+
+  section .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 2cm;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .container .promociones{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+
+}
+
+@media screen and (max-width: 730px){
+  section .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 2cm;
+  }
+
+  section{
+    height: 55cm;
+  }
+
+  section .caja .imagen .boton{
+    font-size: 30px;
+  }
+
+  .nav .buttons ul a{
+    font-size: 10px;
+  }
+
+  .nav .buttons ul{
+    display: none;
+  }
+
+  #navegacion{
+    width: auto;
+  }
+
+}
