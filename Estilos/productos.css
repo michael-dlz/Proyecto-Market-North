@@ -21,7 +21,7 @@ body{
 }
 
 .nav{
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgb(37, 37, 37);
   display: flex;
   justify-content: space-around;
 }
@@ -242,3 +242,31 @@ body{
   border: 1px solid #ffcaa6;
   background-color: #ffcaa6;
  }
+
+ footer{
+  display: flex;
+  justify-content: center;
+  gap: 5cm;
+  background-color: black;
+  padding: 2cm;
+ }
+
+ footer ul{
+  list-style: none;
+  color: white;
+ }
+
+ footer a{
+  text-decoration: none;
+  color: white;
+ }
+
+ footer img{
+  width: 150px;
+ }
+
+@media screen and (width: 1440px) {
+  footer{
+    gap: 2cm;
+  }
+}
