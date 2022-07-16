@@ -37,10 +37,10 @@ nav{
 }
 
 .navbar-brand img{
-  width: 150px;
+  width: 110px;
   margin-left: 3cm;
-  margin-bottom: 11px;
 }
+
 
 header .container{
   height: 12cm;
@@ -84,7 +84,8 @@ header .container{
   border: none;
   color: white;
   font-size: 15px;
-  border: 2px solid #ff7b00;
+  background-color: #ff7b00;
+  border: 1px solid white;
   transition: 500ms;
   cursor: pointer;
 }
@@ -310,10 +311,6 @@ menu .locales img{
 
   #punt .icons p{
     font-size: 30px;
-  }
-
-  menu .locales{
-    margin-bottom: -3cm;
   }
 
   menu .locales h1{

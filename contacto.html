@@ -20,22 +20,37 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </head>
   <body>
-    <nav>
-      <div class="nav">
-          <div class="logo">
-              <a href="index.html"><img src="content/images/logo.svg" alt=""></a>
-          </div>
-          <div class="buttons">
-              <ul>
-                  <a href="historia.html"><li>NOSOTROS</li></a>
-                  <a href="productos.html"><li>PRODUCTOS</li></a>
-                  <a href="contacto.html"><li class="c1">CONTACTANOS</li></a>
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container-fluid" id="barraNav">
+        <a class="navbar-brand" href="#"><img src="content/images/Sin título-1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contacto.html">CONTACTANOS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="historia.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                 NOSOTROS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-          </div>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
-  <div class="barra" id="barra">
-    <marquee style="color: white; padding: 15px; font-size: 25px;" behavior="" direction="">No olvides darle like a nuestra pagina de Facebook!<button style="margin-top: 0; margin-left: 1cm; font-size: 15px;" type="button" class="btn btn-success">¡Vamos allá!</button></marquee>
+    </nav>
 </div class="container">
   <div class="row">
     <div class="col-5">
