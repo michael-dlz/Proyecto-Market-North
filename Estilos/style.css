@@ -390,3 +390,10 @@ footer{
     margin-bottom: 0.1cm;
   }
 }
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 1000px;
+  border-bottom: 5px solid white;
+  box-shadow: 0px 0px 100px 10px black;
+}
