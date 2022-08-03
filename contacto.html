@@ -8,6 +8,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="Estilos/contacto.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ultra&display=swap"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 <title>Contactanos</title>
 </head>
 <body>
@@ -100,11 +116,71 @@
     </div>
   </nav>
   <menu>
-    <img src="content/images/Sin título-1.png" alt="">
+    <img src="content/images/logo en blanco.png">
   </menu>
   <section>
     <div class="container">
+      <header>
+        <h1>Contacto</h1>
+      </header>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-12 position-relative">
+          <label for="validationTooltip01" class="form-label">¿Como nos encontrastes?</label>
+          <select class="form-select" id="validationTooltip04" required>
+            <option selected disabled value=""></option>
+            <option>Familiares</option>
+            <option>Facebook</option>
+            <option>Tiktok</option>
+          </select>
+          <div class="invalid-tooltip">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-12 position-relative">
+          <label for="validationTooltip02" class="form-label">¿Cúal es su nombre y apellido?</label>
+          <input type="text" class="form-control" id="validationTooltip03" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-12 position-relative">
+          <label for="validationTooltip03" class="form-label">¿Cúal es su correo?</label>
+          <input type="email" class="form-control" id="validationTooltip03" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-12 position-relative">
+          <label for="validationTooltip04" class="form-label">¿Dé donde nos escribes?</label>
+          <input type="email" class="form-control" id="validationTooltip03" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-12 position-relative">
+          <label for="validationTooltip05" class="form-label">¿Cúal es tu numero?</label>
+          <input type="tel" class="form-control" id="validationTooltip03" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="mb-12">
+          <label for="exampleFormControlTextarea1" class="form-label">Por favor dinos en que podemos ayudarte</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal1" type="submit">Submit form</button>
+        </div>
+      </form>
+      <div id="modal1" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
 
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
