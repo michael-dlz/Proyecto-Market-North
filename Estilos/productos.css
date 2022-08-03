@@ -12,14 +12,21 @@ body{
 
 /** CSS NAVEGACION **/
 
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
 .navegacion{
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .navegacion a{
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 15px;
 }
@@ -47,7 +54,7 @@ body{
 
 .navegacion ul{
   margin-top: 15px;
-  gap: 6cm;
+  gap: 4cm;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -90,7 +97,7 @@ header .caja{
   width: 7cm;
   height: 10cm;
   transition: 200ms;
-  filter: blur(3px);
+  filter: blur(2px);
 }
 
 .caja .promocion:hover{
@@ -212,15 +219,134 @@ section{
  }
 
  /** CSS PRODUCTOS **/
-section .abarrotes{
-  margin-top: 1cm;
-  display: flex;
-  gap: 1cm;
 
+section h1{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Mochiy Pop One';
+  font-size: 35px;
+  margin-bottom: 1cm;
+}
+
+section h1 strong{
+  color: #ff7f50;
+}
+
+section .container-fluid .container #frutas, #verduras{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(1,1fr);
+}
+ 
+section{
+  height: 38cm;
+} 
+ 
+section .card{
+  transition: 300ms
+}
+
+section .card:hover{
+  box-shadow: 0px 0px 30px 0px rgba(128, 128, 128, 0.567);
+}
+
+section button{
+  background: none;
+  border: none;
+  padding: 7px;
+  border-radius: 20px;
+  color: red;
+  border: 1px solid red;
+  width: 152px;
+  transition: 300ms;
+}
+
+section button:hover{
+  color: white;
+  background-color: red;
+}
+ 
+section #modal1 h1{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Mochiy Pop One';
+  font-size: 35px;
+  padding: 20px;
+}
+
+menu{
+  background: transparent;
+  height: 15cm;
+}
+
+menu h1{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Mochiy Pop One';
+  font-size: 35px;
+}
+
+menu h2{
+  text-align: center;
+  font-family: "Mochiy Pop One";
+  margin-top: 2cm;
+}
+
+menu h2 strong{
+  color: white;
+}
+
+menu h1 strong{
+  color: white;
+}
+
+menu button{
+  background: none;
+  border: none;
+  padding: 7px;
+  border-radius: 20px;
+  color: red;
+  border: 1px solid red;
+  width: 152px;
+  transition: 300ms;
+}
+
+menu button:hover{
+  color: white;
+  background-color: red;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  gap: 5cm;
+  background-color: white;
+  padding: 2cm;
  }
 
- 
- 
- 
- 
- 
+ footer ul{
+  list-style: none;
+  color: #ff7f50;
+  font-weight: bold;
+ }
+
+ footer a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 500ms
+ }
+
+ footer a:hover{
+  font-size: 0.8cm;
+ }
+
+ footer img{
+  width: 150px;
+ }
+
+@media screen and (max-width: 1440px) {
+  footer{
+    gap: 3cm;
+  }
+}
