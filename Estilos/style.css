@@ -72,10 +72,18 @@ nav{
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1440px) {
+  .navegacion ul{
+    gap: 2cm;
+  }
+}
+
 .navegacion img{
   width: 200px;
   filter: brightness(1.1);
   mix-blend-mode: multiply;
+  animation: bounceIn;
+  animation-duration: 1.5s;
 
 }
 
@@ -100,12 +108,19 @@ header .container{
   font-size: 1.5cm;
   font-family: 'Luckiest Guy', cursive;
   padding-left: 3cm;
+  animation: bounceIn;
+  animation-duration: 1.5s;
 }
 
 .container .ubicacion{
   display: grid;
   align-content: center;
   justify-content: center;
+}
+
+.container .ubicacion label{
+  animation: bounceIn;
+  animation-duration: 1.5s;
 }
 
 .container .ubicacion input{
@@ -115,6 +130,8 @@ header .container{
   border: none;
   transition: 500ms;
   border-radius: 20px;
+  animation: bounceIn;
+  animation-duration: 1.5s;
 }
 
 .container .ubicacion button{
@@ -129,6 +146,8 @@ header .container{
   cursor: pointer;
   border-radius: 20px;
   margin-left: 15px;
+  animation: bounceIn;
+  animation-duration: 1.5s;
 }
 
 .container .ubicacion button:hover{

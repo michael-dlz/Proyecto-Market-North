@@ -60,6 +60,12 @@ nav{
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1440px) {
+  .navegacion ul{
+    gap: 2cm;
+  }
+}
+
 .navegacion img{
   width: 200px;
   filter: brightness(1.1);
@@ -73,6 +79,8 @@ header .titulo{
   text-align: center;
   padding-top: 2cm;
   color: white;
+  animation: bounceIn;
+  animation-duration: 1.5s;
 }
 
 header .titulo h1{
@@ -98,6 +106,8 @@ header .caja{
   height: 10cm;
   transition: 200ms;
   filter: blur(2px);
+  animation: bounceIn;
+  animation-duration: 1.5s;
 }
 
 .caja .promocion:hover{
