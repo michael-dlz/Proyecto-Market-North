@@ -28,12 +28,15 @@ nav{
   position: sticky;
   top: 0;
   z-index: 99;
+  padding: 20px;
 }
 
 .navegacion{
   display: flex;
   justify-content: center;
   background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgb(136, 136, 136);
 }
 
 .navegacion a{
@@ -87,13 +90,40 @@ nav{
 
 }
 
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+  text-decoration: none;
+  transition: 1s;
+  animation: bounce;
+  animation-iteration-count: infinite;
+  animation-duration: 1000ms;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+
+header{
+  height: 3cm;
+}
 
 header .container{
-  height: 8cm;
+  height: 10cm;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  margin-top: 4cm;
+  align-content: center;
+  margin-top: 2cm;
   margin-bottom: -5cm;
 }
 
@@ -110,6 +140,10 @@ header .container{
   padding-left: 3cm;
   animation: bounceIn;
   animation-duration: 1.5s;
+}
+
+.container .text strong{
+  color: #ff7f50;
 }
 
 .container .ubicacion{
@@ -189,6 +223,8 @@ header .container{
   text-align: center;
   margin-top: 45px;
   transition: 300ms;
+  animation: fadeInDown;
+  animation-duration: 1s;
 }
 
 #punt .icons:hover{
@@ -227,6 +263,8 @@ menu .locales .text{
   display: grid;
   align-content: center;
   text-align: right;
+  animation: bounceIn;
+  animation-duration: 1s;
 }
 
 menu .locales .text button{
@@ -259,10 +297,24 @@ menu .locales .img{
   align-content: center;
   justify-content: left;
   padding: 3cm;
+  animation: bounceIn;
+  animation-duration: 1s;
 }
 
-menu .locales img{
-  width: 500px
+menu iframe{
+  width: 700px;
+  height: 500px;
+}
+
+@media screen and (max-width: 1440px) {
+  menu .locales .img{
+    padding: 1cm;
+  }
+
+  menu iframe{
+    width: 500px;
+    height: 300;
+  }
 }
 
 #proveedores{
@@ -275,6 +327,8 @@ menu .locales img{
   height: 8cm;
   display: flex;
   justify-content: center;
+  animation: slideInUp;
+  animation-duration: 1s;
 }
 
 #proveedores .title{
@@ -346,8 +400,7 @@ menu .locales img{
 }
 
 #reseñas{
-  height: 20cm;
-  padding: 3cm;
+  height: 15cm;
 }
 
 #reseñas .title{
@@ -357,11 +410,16 @@ menu .locales img{
   font-family: 'Luckiest Guy', cursive;
   padding: 30px;
   color: white;
+  animation: fadeInDown;
+  animation-duration: 1s;
 }
 
 #reseñas .comen{
   display: flex;
   justify-content: center;
+  animation: fadeInDown;
+  animation-duration: 1s;
+
 }
 
 @media screen and (max-width: 1440px){
@@ -454,6 +512,12 @@ footer{
     margin-top: 0cm;
     height: 23cm;
     margin-bottom: 0.1cm;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  footer{
+    gap: 3cm;
   }
 }
 
