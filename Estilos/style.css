@@ -128,7 +128,6 @@ header .container{
   text-align: left;
   font-size: 1.5cm;
   font-family: 'Luckiest Guy', cursive;
-  padding-left: 3cm;
   animation: bounceIn;
   animation-duration: 1.5s;
 }
@@ -526,6 +525,7 @@ footer{
   gap: 5cm;
   background-color: white;
   padding: 2cm;
+  margin: 0 !important;
  }
 
  footer ul{
@@ -653,8 +653,7 @@ footer{
   }
 
   menu .locales .img{
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
   menu .locales .text h1{
@@ -724,6 +723,10 @@ footer{
     grid-template-columns: repeat(1, 1fr);
   }
 
+  #reseñas{
+    height: 35cm;
+  }
+
   nav{
     display: none;
   }
@@ -731,4 +734,60 @@ footer{
   .gmap_canvas{
     transform: scale(0.6,0.6);
   }
+
+  .twitter-tweet{
+    transform: scale(0.8, 0.8);
+  }
+
+  #proveedores .provee{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 1cm;
+  }
+}
+
+@media screen and (max-width: 680px) {
+
+  #punt{
+    height: 20cm;
+  }
+
+  #punt .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+  }
+
+  .twitter-tweet{
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .container .text{
+    transform: scale(0.8,0.8);
+  }
+
+  header .container .ubicacion input{
+    width: 200px;
+  }
+
+  header .container .ubicacion .input{
+   text-align: center;
+  }
+
+  header .container .ubicacion .input button{
+    margin: 0;
+  }
+  
+menu .locales{
+  margin-top: 1cm;
+}
+
+footer{
+  text-align: center;
+}
+
 }
