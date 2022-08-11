@@ -5,6 +5,8 @@
   scroll-behavior: smooth;
 }
 
+/** ACA ESTAMOS IMPORTANDO UNA FUENTE DE GOOGLE FONTS **/
+
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ultra&display=swap');
 
 body{
@@ -13,6 +15,8 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+/** ESTILOS DE LA BARRA DE NAVEGACION **/
 
 nav{
   position: sticky;
@@ -66,6 +70,8 @@ nav{
   justify-content: space-between;
 }
 
+/** ACA ESTAMOAS HACIENDO UN JQUERY EN PANTALLA 1440 PX PARA LA BARRA DE NAVEGACION **/
+
 @media screen and (max-width: 1440px) {
   .navegacion ul{
     gap: 2cm;
@@ -80,6 +86,8 @@ nav{
   animation-duration: 1.5s;
 
 }
+
+/** ESTILOS DEL BOTÓN DE WHATSAPP **/
 
 .whatsapp {
   position:fixed;
@@ -104,6 +112,8 @@ nav{
   margin-top:13px;
 }
 
+/** ESTILOS DEL HEADER **/
+
 header{
   height: 3cm;
 }
@@ -117,6 +127,8 @@ header .container{
   margin-top: 2cm;
   margin-bottom: -5cm;
 }
+
+/** ESTOS ESTILOS VIENEN DE LA CAJA DE LOS TEXTOS, ESTO PARA HACER UN MEJOR MANEJO **/
 
 .container .text{
   display: grid;
@@ -135,6 +147,8 @@ header .container{
 .container .text strong{
   color: #ff7f50;
 }
+
+/** ESTOS ESTILOS SON DEL INPUT DE UBICACIÓN **/
 
 .container .ubicacion{
   display: grid;
@@ -194,6 +208,8 @@ header .container{
   font-family: arial;
 }
 
+/** ESTOS SON LOS ESTILOS DE LOS ICONOS O PUNTUACIONES DE LA PAGINA **/
+
 #punt{
   height: 8cm;
   background-color: white;
@@ -230,6 +246,8 @@ header .container{
 #punt .icons img{
   width: 140px;
 }
+
+/** ACA EMPIEZA LOS ESTILOS DE LA PAGINA DONDE SE MUESTRA LOS PRODUCTOS QUE TE LLEVARAN A LA PAGINA DE PRODUCTOS **/
 
 #promo .container-fluid{
   height: 10cm;
@@ -275,6 +293,8 @@ header .container{
   color: white;
 }
 
+/** ACA ESTAMOS HACIENDO LOS ESTILOS DE LA VENTANA MODAL **/
+
 #modal1 h1{
   font-size: 30px;
   font-family: 'Mochiy Pop One';
@@ -295,6 +315,8 @@ header .container{
   margin-left: 170px;
   padding: 40px;
 }
+
+/** ACA SON LOS ESTILOS DEL MAPA DE GOOGLE MAPS Y LOCALES DONDE SE MUESTRAN TODAS LAS TIENDAS DE NUESTRO NEGOCIO **/
 
 header{
   height: 14cm;
@@ -381,6 +403,8 @@ menu iframe{
   }
 }
 
+/** ESTOS SONS LOS ESTILOS DE LA SECCION DE PROVEEDORES Y DISTRIBUIDORES**/
+
 #proveedores .provee img{
   width: 130px;
   height: 90px;
@@ -462,6 +486,8 @@ menu iframe{
   transform: scale(1.3);
 }
 
+/** ESTOS SON LOS ESTILOS DE LAS RECOMENDACIONES DE TWITTER **/
+
 #reseñas{
   height: 15cm;
 }
@@ -488,6 +514,8 @@ menu iframe{
 #reseñas .comen .twitter-tweet{
   margin: auto;
 }
+
+/** ACA ESTAMOS HACIENDO LOS MEDIA QUERIES DE NUESTRA PAGINA EN 1440 PX **/ 
 
 @media screen and (max-width: 1440px){
   .container .text p{
@@ -518,6 +546,8 @@ menu iframe{
     width: 10cm;
   }
 }
+
+/** ESTOS SON LOS ESTILOS DEL FOOTER **/
 
 footer{
   display: flex;
@@ -554,6 +584,8 @@ footer{
     gap: 3cm;
   }
 }
+
+/** ESTOS SON LOS ESTILOS EN LA PANTALLA 1366 PX **/
 
 @media screen and (max-width: 1366px){
 
@@ -598,12 +630,7 @@ footer{
   }
 }
 
-.carousel-inner img {
-  width: 100%;
-  max-height: 1000px;
-  border-bottom: 5px solid white;
-  box-shadow: 0px 0px 100px 10px black;
-}
+/** ESTOS SON LOS ESTILOS EN LA PANTALLA DE 1200 PX **/
 
 @media screen and (max-width: 1200px) {
   .navegacion ul{
@@ -625,6 +652,8 @@ footer{
   }
 }
 
+/** PANTALLA 1101 PX **/
+
 @media screen and (max-width: 1101px) {
   .whatsapp {
     position:fixed;
@@ -638,6 +667,8 @@ footer{
     gap: 0;
   }
 }
+
+/** PANTALLA 1060PX **/
 
 @media screen and (max-width: 1060px) {
   menu .locales{
@@ -717,6 +748,8 @@ footer{
   }
 }
 
+/** PANTALLA 850 PX **/
+
 @media screen and (max-width: 850px) {
   #reseñas .comen{
     display: grid;
@@ -747,6 +780,8 @@ footer{
   }
 }
 
+/** PANTALLA 680 PX **/
+
 @media screen and (max-width: 680px) {
 
   #punt{
@@ -764,6 +799,8 @@ footer{
     width: 100px;
   }
 }
+
+/** PANTALLA 450 PX **/
 
 @media screen and (max-width: 450px) {
   header .container .text{
