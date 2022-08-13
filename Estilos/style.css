@@ -115,17 +115,19 @@ nav{
 /** ESTILOS DEL HEADER **/
 
 header{
-  height: 3cm;
+  margin-top: 1cm;
+  display: flex;
+  justify-content: center;
 }
 
 header .container{
-  height: 10cm;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  align-content: center;
-  margin-top: 2cm;
-  margin-bottom: -5cm;
+  height: 20cm;
+  margin: auto;
+}
+
+header .container #promocion{
+  display: flex;
+  justify-content: center;
 }
 
 /** ESTOS ESTILOS VIENEN DE LA CAJA DE LOS TEXTOS, ESTO PARA HACER UN MEJOR MANEJO **/
@@ -175,6 +177,7 @@ header .container{
 .container .ubicacion button{
   height: 1.4cm;
   width: 3cm;
+  margin-top: 20px;
   background: none;
   border: none;
   color: white;
@@ -183,7 +186,6 @@ header .container{
   transition: 300ms;
   cursor: pointer;
   border-radius: 20px;
-  margin-left: 15px;
   animation: bounceIn;
   animation-duration: 1.5s;
 }
@@ -650,6 +652,14 @@ footer{
     margin-top: 20px;
     height: 40px;
   }
+
+  header{
+    height: 30cm;
+  }
+
+  header #promocion{
+    margin-top: 2cm;
+  }
 }
 
 /** PANTALLA 1101 PX **/
@@ -797,6 +807,10 @@ footer{
 
   .twitter-tweet{
     width: 100px;
+  }
+
+  header{
+    height: 30cm;
   }
 }
 

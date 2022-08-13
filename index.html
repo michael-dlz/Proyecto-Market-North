@@ -132,17 +132,24 @@ new WOW().init();
   <!-- ACA EMPIEZA EL MENU PRINCIPAL -->
     <header>
         <div class="container">
-            <div class="text container-fluid">
-                <P>EN <strong>CHIHUÁN</strong> TE
-                TRAEMOS TODO A TU CASA
-                CON UN SOLO CLICK!</P>
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="text container-fluid">
+                  <P>EN <strong>CHIHUÁN</strong> TE
+                  TRAEMOS TODO A TU CASA
+                  CON UN SOLO CLICK!</P>
+              </div>
+              <div class="ubicacion container-fluid ">
+                  <label for="text">Envianos tu ubicación</label>
+                  <div class="input">
+                      <input type="text" placeholder="Envianos tu ubicacion!"><a href="#"><button data-bs-toggle="modal" data-bs-target="#modal1">ENVIAR</button></a>
+                  </div>
+              </div>
             </div>
-            <div class="ubicacion container-fluid ">
-                <label for="text">Envianos tu ubicación</label>
-                <div class="input">
-                    <input type="text" placeholder="Envianos tu ubicacion!"><a href="#"><button data-bs-toggle="modal" data-bs-target="#modal1">ENVIAR</button></a>
-                </div>
+            <div class="col-xl-6" id="promocion">
+              <iframe class="img-fluid" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCocaColaBO%2Fphotos%2Fa.235053543526182%2F1483675151997342%2F%3Ftype%3D3&show_text=false&width=500" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
+          </div>      
         </div>
     </header>
     <!-- REALIZAMOS UNA VENTA MODAL PARA EL BOTON DE UBICACIÓN -->

@@ -460,3 +460,13 @@ footer{
     display: none;
   }
 }
+
+@media screen and (max-width: 576px) {
+  menu .mb-3{
+    width: 100%;
+  }
+
+  menu .mb-3{
+    width: 100%;
+  }
+}
